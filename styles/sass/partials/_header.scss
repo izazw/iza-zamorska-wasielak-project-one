@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+header {
+   background-color: $crl-base-dk;
+   height: 60vh;
+
+   }
+
+
+   .main-nav ul {
+      display: flex;
+      justify-content: center;
+      li {
+         display: inline-block;
+         margin: 5px 20px;
+
+      }
+   }
