@@ -1,6 +1,70 @@
-h1,
-h2,
-h3,
-a {
-   text-transform: uppercase;
+@use "variables" as *;
+
+html {
+   font-family: 'Abril Fatface', cursive;
+   font-family: 'Montserrat', sans-serif;
+   color: $crl-black;
+   font-size: 125%;
+   letter-spacing: 1px;
 }
+
+// font colours
+
+
+header,
+header nav a,
+footer {
+   color: $crl-white-dk;
+}
+
+//header styling 
+
+header {
+   text-transform: uppercase;
+   font-weight: bold;
+   h1 {
+      font-size: 4.5rem;
+      font-family: 'Abril Fatface', cursive;
+      color: $crl-white-dk;
+   }
+   nav {
+      a {
+         font-size: 0.75rem;
+      }
+      .menu-special {
+         font-size: 1.25rem;
+         font-family: 'Abril Fatface', cursive;
+      } 
+   }
+   
+}
+
+main {
+   h3,
+   h2 { 
+      text-transform: uppercase;
+   }   
+   h2 {
+      font-size: 1.25rem;
+   }
+   h3 {
+      font-size: 1.1rem;
+   }
+   a {
+      color: inherit;
+      h2 {
+         text-transform: uppercase;
+      }
+   }
+   .read-more {
+      text-transform: uppercase;
+      font-family: 'Abril Fatface', cursive;
+      font-weight: bold;
+   }
+}
+
+
+
+
+
+
