@@ -26,6 +26,7 @@ header {
       font-size: 4.5rem;
       font-family: 'Abril Fatface', cursive;
       color: $crl-white-dk;
+      letter-spacing: 1px;
    }
    nav {
       a {
@@ -42,7 +43,9 @@ header {
 main {
    h3,
    h2 { 
+      font-family: 'Abril Fatface', cursive;
       text-transform: uppercase;
+      letter-spacing: 1px;
    }   
    h2 {
       font-size: 1.25rem;
@@ -54,6 +57,7 @@ main {
       color: inherit;
       h2 {
          text-transform: uppercase;
+         letter-spacing: 1px;
       }
    }
    .read-more {
