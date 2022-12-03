@@ -345,4 +345,22 @@ header {
 }
 .header-container .header-img img {
   width: 100%;
+  padding-top: 10px;
+  -webkit-box-shadow: 16px 16px #ffffff;
+          box-shadow: 16px 16px #ffffff;
+  max-width: 400px;
+}
+
+.header-container .header-text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.header-container .header-text img {
+  position: relative;
+  top: 157px;
+  right: 50px;
+  height: 5.5rem;
+}
+.header-container .header-text h1 {
+  padding-right: 20px;
 }
