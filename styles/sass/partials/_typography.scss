@@ -45,10 +45,11 @@ main {
    h2 { 
       font-family: 'Abril Fatface', cursive;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
    }   
    h2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
    }
    h3 {
       font-size: 1.1rem;
@@ -64,6 +65,11 @@ main {
       text-transform: uppercase;
       font-family: 'Abril Fatface', cursive;
       font-weight: bold;
+      font-size: 0.75rem;
+   }
+   p {
+      font-size: 1 rem;
+      line-height: 32px;
    }
 }
 
