@@ -2,9 +2,10 @@
 
 header {
    background-color: $crl-base-dk;
-   height: 60vh;
+   height: 64vh;
 
    }
+
 
 
    .main-nav ul {
@@ -12,7 +13,23 @@ header {
       justify-content: center;
       li {
          display: inline-block;
-         margin: 5px 20px;
+         margin: 27px;
+      }
+      a:hover,
+      a:focus {
+         color: $clr-accent;
+      }
+   }
 
+
+   .header-container {
+      display: flex; 
+      justify-content: flex-end;
+      align-content: center;
+      .header-img {
+         width: 31%;
+         img {
+            width: 100%;
+         }
       }
    }
