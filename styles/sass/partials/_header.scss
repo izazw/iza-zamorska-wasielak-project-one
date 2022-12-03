@@ -2,9 +2,10 @@
 
 header {
    background-color: $crl-base-dk;
-   height: 60vh;
+   height: 64vh;
 
    }
+
 
 
    .main-nav ul {
@@ -12,7 +13,41 @@ header {
       justify-content: center;
       li {
          display: inline-block;
-         margin: 5px 20px;
+         margin: 27px;
+      }
+      a:hover,
+      a:focus {
+         color: $clr-accent;
+      }
+   }
 
+
+   .header-container {
+      display: flex; 
+      justify-content: flex-end;
+      align-content: center;
+      .header-img {
+         width: 31%;
+         
+         img {
+            width: 100%;
+            padding-top: 10px;
+            box-shadow: 16px 16px $crl-white-lt;
+            max-width: 400px;
+         }
+      }
+   }
+
+   .header-container .header-text {
+   
+      align-self: flex-start;
+      img { 
+         position: relative;
+         top: 157px;
+         right: 50px;
+         height: 5.5rem;
+      }
+      h1 {
+         padding-right: 20px;
       }
    }
