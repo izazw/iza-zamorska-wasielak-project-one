@@ -456,13 +456,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
 .bucket-container .text-container {
-  width: 50%;
+  width: calc(50% - 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,12 +468,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-left: 50px;
   position: relative;
   bottom: 15px;
+  margin-right: 40px;
 }
 .bucket-container .text-container h3 {
   padding-top: 90px;
@@ -485,6 +484,7 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0 auto;
+  text-align: right;
 }
 .bucket-container .img-container {
   width: 50%;
@@ -536,4 +536,10 @@ header {
   -webkit-box-shadow: 17px 17px #709b6b;
           box-shadow: 17px 17px #709b6b;
   margin: 90px;
+}
+
+.landscape div {
+  background-image: url(../assets/home-image-5.jpg);
+  height: 400px;
+  background-size: cover;
 }
