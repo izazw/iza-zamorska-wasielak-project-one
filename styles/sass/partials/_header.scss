@@ -2,7 +2,7 @@
 
 header {
    background-color: $crl-base-dk;
-   height: 64vh;
+   // height: 64vh;
 
    }
 
@@ -28,15 +28,15 @@ header {
       align-content: center;
       .header-img {
          width: 31%;
+         position: relative;
+         bottom: -60px;
          
          img {
             width: 100%;
             padding-top: 10px;
             box-shadow: 16px 16px $crl-white-lt;
             max-width: 400px;
-            position: relative;
-            bottom: -40px;
-            top: 0;
+       
          }
       }
    }
