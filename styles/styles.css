@@ -316,7 +316,6 @@ ul {
 
 header {
   background-color: #345231;
-  height: 64vh;
 }
 
 .main-nav ul {
@@ -348,6 +347,8 @@ header {
 }
 .header-container .header-img {
   width: 31%;
+  position: relative;
+  bottom: -60px;
 }
 .header-container .header-img img {
   width: 100%;
@@ -355,9 +356,6 @@ header {
   -webkit-box-shadow: 16px 16px #ffffff;
           box-shadow: 16px 16px #ffffff;
   max-width: 400px;
-  position: relative;
-  bottom: -40px;
-  top: 0;
 }
 
 .header-container .header-text {
@@ -452,4 +450,49 @@ header {
           box-shadow: -490px 17px #709b6b, 17px 17px #709b6b;
   position: relative;
   top: -40px;
+}
+
+.bucket-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.bucket-container .text-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 50px;
+  position: relative;
+  bottom: 15px;
+}
+.bucket-container .text-container h3 {
+  padding-top: 90px;
+  margin: 0 0;
+}
+.bucket-container .text-container p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.bucket-container .img-container {
+  width: 50%;
+}
+.bucket-container .img-container img {
+  width: 100%;
+  -webkit-box-shadow: 17px 17px #345231, 490px 17px #345231;
+          box-shadow: 17px 17px #345231, 490px 17px #345231;
+  position: relative;
+  bottom: -95px;
 }
