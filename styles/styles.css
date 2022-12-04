@@ -543,3 +543,22 @@ header {
   height: 400px;
   background-size: cover;
 }
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery-container .gallery-item {
+  height: auto;
+  max-width: 30%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.gallery-container .gallery-item img {
+  height: auto;
+  max-width: 100%;
+}

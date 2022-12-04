@@ -149,3 +149,21 @@
 
    }
 }
+
+// gallery 
+
+.gallery-container {
+   display: flex;
+   justify-content: space-between;
+   .gallery-item {
+      height: auto;
+      max-width: 30%;
+      margin-top: 80px;
+      margin-bottom: 20px;
+
+      img {
+         height: auto;
+         max-width: 100%;
+      }
+   }
+}
