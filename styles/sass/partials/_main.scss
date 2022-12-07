@@ -13,11 +13,11 @@
 // main about
 
 .about {
-   height: 55vh;
    .about-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 100px;
       h2 {
          margin-top: 0;
          padding-top: 100px;
@@ -45,6 +45,7 @@
       padding-left: 50px;
       position: relative;
       bottom: 30px;
+
       h3 {
          padding-top: 80px;
          margin: 0 0;
@@ -111,7 +112,7 @@
 .journey-container {
    display: flex;
    align-content: space-between;
-  align-items: flex-end;
+   align-items: flex-end;
    .text-container {
       width: 70%;
       display: flex;
@@ -157,13 +158,51 @@
    justify-content: space-between;
    .gallery-item {
       height: auto;
-      max-width: 30%;
-      margin-top: 80px;
-      margin-bottom: 20px;
+      max-width: 31%;
+      margin: 10px 0px;
 
       img {
          height: auto;
          max-width: 100%;
+         margin: 90px 0;
       }
    }
+}
+
+// nav bottom 
+
+
+
+.nav-bottom-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 30px;
+   
+   li {
+      width: 45%;
+      display: inline-block;
+   }
+    h2 {
+       margin-top: 60px;
+       margin-bottom: 0;
+   }
+   .contact-item {
+      position: relative;
+   }
+}
+
+.icon {
+   background-color: $clr-accent; 
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: inline-block;
+   position: absolute;
+   left: -60px;
+}
+
+.fa-li {
+   width: 120px;
+   margin-top: 9px;
 }
