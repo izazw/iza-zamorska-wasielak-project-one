@@ -376,6 +376,12 @@ header {
   padding-right: 20px;
 }
 
+.contact-header-container {
+  background-image: url("../assets/contact-image-1.jpg");
+  background-size: cover;
+  height: 46vh;
+}
+
 .gray-style {
   background-color: #f6f6f6;
 }

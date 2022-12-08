@@ -2,7 +2,6 @@
 
 header {
    background-color: $crl-base-dk;
-   // height: 64vh;
 
    }
 
@@ -53,4 +52,14 @@ header {
       h1 {
          padding-right: 20px;
       }
+   }
+
+   // header - contact site
+
+
+
+   .contact-header-container {
+      background-image: url("../assets/contact-image-1.jpg");
+      background-size: cover;
+      height: 46vh;
    }

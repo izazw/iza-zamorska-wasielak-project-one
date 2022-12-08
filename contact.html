@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script src="https://kit.fontawesome.com/8e0d4d69be.js" crossorigin="anonymous"></script>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <title>Document</title>
-   <style>
-      /* i {
-         color: red;
-         font-size: 10px;
-         line-height: 50px;
-      } */
-   </style>
+   <title>Contact me</title>
    <script src="https://kit.fontawesome.com/8e0d4d69be.js" crossorigin="anonymous"></script>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-   <i class="fa-solid fa-user  fa-2xs"></i>
-   <i class="fa-solid fa-microphone-lines"></i>
-   <i class="fa-solid fa-heart"></i>
-   f304
-   f304
-   <i class="fa-solid fa-pen"></i>
+<header>
+   
+   <!-- navigation -->
+   <nav class="main-nav">
+      <div class="nav-wrapper">
+         <ul>
+            <li>
+               <a href="#">home</a>
+            </li>
+            <li>
+               <a href="#">about</a>
+            </li>
+            <li>
+               <a href="#" class="menu-special">willow</a>
+            </li>
+            <li>
+               <a href="./blog.html">blog</a></li>
+            <li>
+               <a href="./contact.html">contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- end of navigation -->
+   <div class="contact-header-container">
+      <h1>contact me</h1>
+   </div>
+</header>
+  
+
+<!-- main -->
+
+<main>
+   <div class="wrapper contact-container">
+      <div class="contact-details">
+         <ul>
+            <li><a href=""><i></i></a></li>
+            <li><a href=""><i></i></a></li>
+            <li><a href=""><i></i></a></li>
+            <li><a href=""><i></i></a></li>
+         </ul>
+         <a href="mailto:"></a>
+         <p>123-456-7890</p>
+         <p>123 Queen Street West, Unit 10</p>
+         <p>Toronto, Ontario</p>
+         <p>M5V2D5</p>
+      </div>
+      <div>
+         <form action="#" method="#" class="contact-form" name="contact-form">
+
+            <label for="user-name">Name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Name">
+
+            <label for="user-email">Email address</label>
+            <input type="text" id="user-email" name="user-email" placeholder="Email address">
+         
+            <label for="message">Message</label>
+            <textarea name="user-message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
+            <button type="submit">submit</button>
+         </form>
+      </div>
+
+</main>
+
+<footer>
+		<p>Copyright © 2018 HackerYou </p>
+</footer>
+
 </body>
 </html>
