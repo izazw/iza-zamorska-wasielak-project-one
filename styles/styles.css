@@ -289,9 +289,27 @@ main p {
   line-height: 28px;
   letter-spacing: 0;
 }
+main form {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+main .address-ul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
 
 footer p {
   font-size: 0.8rem;
+}
+
+.address-ul li {
+  font-size: 1rem;
+}
+
+.form-container button {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 
 .wrapper {
@@ -316,12 +334,16 @@ ul {
   list-style-position: inside;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 header {
   background-color: #345231;
 }
 
+.main-nav {
+  height: 80px;
+}
 .main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +401,19 @@ header {
 .contact-header-container {
   background-image: url("../assets/contact-image-1.jpg");
   background-size: cover;
-  height: 46vh;
+  height: 320px;
+}
+.contact-header-container .contact-h1-container {
+  height: 100%;
+  position: relative;
+}
+.contact-header-container .contact-h1-container h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  position: absolute;
+  bottom: -8px;
 }
 
 .gray-style {
@@ -607,6 +641,135 @@ header {
 .fa-li {
   width: 120px;
   margin-top: 9px;
+}
+
+.contact-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+.contact-container .contact-details {
+  width: 31%;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-container .contact-details a {
+  color: #1f1f1f;
+  font-weight: bold;
+}
+.contact-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 30px;
+}
+.contact-container .social-ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.contact-container .social-ul li {
+  padding-right: 35px;
+  display: inline-block;
+}
+.contact-container .social-ul li i {
+  font-size: 1.25rem;
+  color: #345231;
+}
+.contact-container .address-ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0;
+}
+.contact-container .address-ul li {
+  margin-bottom: 10px;
+}
+.contact-container .form-container {
+  width: calc(70% - 30px);
+}
+.contact-container .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-container .form-container form input {
+  background-color: #ffffff;
+  width: calc(50% - 5px);
+  padding: 30px 20px;
+  margin-bottom: 15px;
+  border: none;
+  display: inline-block;
+}
+.contact-container .form-container form input::-webkit-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form input::-moz-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form input:-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form input::-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form input::placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form textarea {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 30px 20px;
+  resize: none;
+  border: none;
+}
+.contact-container .form-container form textarea::-webkit-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form textarea::-moz-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form textarea:-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form textarea::-ms-input-placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container form textarea::placeholder {
+  color: #1f1f1f;
+  opacity: 0.9;
+}
+.contact-container .form-container button {
+  width: 100%;
+  border: none;
+  margin-top: 15px;
 }
 
 footer {

@@ -7,18 +7,22 @@ header {
 
 
 
-   .main-nav ul {
+   .main-nav {
+      height: 80px;
+      ul {
       display: flex;
       justify-content: center;
-      li {
+         li {
          display: inline-block;
          margin: 27px;
-      }
+         }
       a:hover,
       a:focus {
          color: $clr-accent;
       }
    }
+}
+
 
 
    .header-container {
@@ -54,6 +58,7 @@ header {
       }
    }
 
+
    // header - contact site
 
 
@@ -61,5 +66,18 @@ header {
    .contact-header-container {
       background-image: url("../assets/contact-image-1.jpg");
       background-size: cover;
-      height: 46vh;
+      height: 320px;
+         .contact-h1-container {
+            height: 100%;
+            position: relative;
+            h1 {
+               margin: 0;
+               padding: 0;
+               font-size: 3.5rem;
+               line-height: 3.5rem;
+               position: absolute;
+               bottom: -8px;
+            }
+         }
+     
    }
