@@ -59,25 +59,33 @@ header {
    }
 
 
-   // header - contact site
+   // header - subpages general styling
 
+.header-container {
+   background-size: cover;
+   height: 320px;
+   .h1-container {
+      height: 100%;
+      position: relative;
+      h1 {
+         margin: 0;
+         padding: 0;
+         font-size: 3.5rem;
+         line-height: 3.5rem;
+         position: absolute;
+         bottom: -8px;
+      }
+   }
+}
 
+// contact page header 
 
    .contact-header-container {
       background-image: url("../assets/contact-image-1.jpg");
-      background-size: cover;
-      height: 320px;
-         .contact-h1-container {
-            height: 100%;
-            position: relative;
-            h1 {
-               margin: 0;
-               padding: 0;
-               font-size: 3.5rem;
-               line-height: 3.5rem;
-               position: absolute;
-               bottom: -8px;
-            }
-         }
-     
    }
+
+// blog&news site 
+
+.blog-header-container {
+   background-image: url("../assets/blog-image-1.jpg");
+}
