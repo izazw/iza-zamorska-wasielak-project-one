@@ -398,22 +398,29 @@ header {
   padding-right: 20px;
 }
 
-.contact-header-container {
-  background-image: url("../assets/contact-image-1.jpg");
+.header-container {
   background-size: cover;
   height: 320px;
 }
-.contact-header-container .contact-h1-container {
+.header-container .h1-container {
   height: 100%;
   position: relative;
 }
-.contact-header-container .contact-h1-container h1 {
+.header-container .h1-container h1 {
   margin: 0;
   padding: 0;
   font-size: 3.5rem;
   line-height: 3.5rem;
   position: absolute;
   bottom: -8px;
+}
+
+.contact-header-container {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+.blog-header-container {
+  background-image: url("../assets/blog-image-1.jpg");
 }
 
 .gray-style {
