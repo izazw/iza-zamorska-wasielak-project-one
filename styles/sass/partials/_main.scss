@@ -207,5 +207,98 @@
    margin-top: 9px;
 }
 
-//contact section 
+
+
+//contact-me-page main styling 
+
+
+
+.contact-container {
+
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 80px 0;
+   .contact-details {
+      width: calc(31%);
+      height: 100%;
+      background-color: $crl-white-lt;
+      display: flex;
+      flex-direction: column;
+      a {
+         color: $crl-black;
+         font-weight: bold;
+      }
+   }
+   ul {
+      display: flex;
+      margin: 30px 30px;
+     
+   }
+   .social-ul {
+      justify-content: flex-start;
+      li {
+         padding-right: 35px;
+         display: inline-block;
+         i {
+            font-size: 1.25rem;
+            color: $crl-base-dk;
+         }
+      }
+
+   }
+   .address-ul {
+      flex-direction: column;
+      margin-top: 0;
+      li {
+         margin-bottom: 10px;
+      }
+
+      
+   }
+
+   .form-container {
+      // border: 1px solid black;
+      width: calc(70% - 30px);
+      form {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         input {
+            background-color: $crl-white-lt;
+            width: calc(50% - 5px);
+            padding: 30px 20px;
+            margin-bottom: 15px;
+            border: none;
+            display: inline-block;
+            &::placeholder {
+               color: $crl-black;
+               opacity: 0.9;
+            }
+         }
+         textarea {
+            background-color: $crl-white-lt;
+            width: 100%;
+            padding: 30px 20px;
+            resize: none;
+            border: none;
+            &::placeholder {
+               color: $crl-black;
+               opacity: 0.9;
+            }
+         }
+        
+      }
+      button {
+         width: 100%;
+         border: none;
+         margin-top: 15px;
+        
+
+
+      }
+   }
+  
+}
+
 

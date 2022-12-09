@@ -35,40 +35,44 @@
 
    <!-- end of navigation -->
    <div class="contact-header-container">
-      <h1>contact me</h1>
+      <div class="contact-h1-container wrapper">
+         <h1>contact me</h1>
+      </div>
    </div>
 </header>
   
 
 <!-- main -->
 
-<main>
+<main class="contact-me-main gray-style">
    <div class="wrapper contact-container">
       <div class="contact-details">
-         <ul>
-            <li><a href=""><i></i></a></li>
-            <li><a href=""><i></i></a></li>
-            <li><a href=""><i></i></a></li>
-            <li><a href=""><i></i></a></li>
+         <ul class="social-ul">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
          </ul>
-         <a href="mailto:"></a>
-         <p>123-456-7890</p>
-         <p>123 Queen Street West, Unit 10</p>
-         <p>Toronto, Ontario</p>
-         <p>M5V2D5</p>
+            <ul class="address-ul">
+               <li> <a href="mailto:info@email.com" class="mail-link">info@email.com</a></li>
+               <li>123-456-7890</li>
+               <li>123 Queen Street West, Unit 10</li>
+               <li>Toronto, Ontario</li>
+               <li>M5V2D5</li>
+            </ul>
       </div>
-      <div>
+      <div class="form-container gray-style">
          <form action="#" method="#" class="contact-form" name="contact-form">
 
-            <label for="user-name">Name</label>
+            <label for="user-name" class="sr-only">Name</label>
             <input type="text" id="user-name" name="user-name" placeholder="Name">
 
-            <label for="user-email">Email address</label>
+            <label for="user-email" class="sr-only">Email address</label>
             <input type="text" id="user-email" name="user-email" placeholder="Email address">
          
-            <label for="message">Message</label>
-            <textarea name="user-message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
-            <button type="submit">submit</button>
+            <label for="message" class="sr-only">Message</label>
+            <textarea name="user-message" id="message" cols="20" rows="10" placeholder="Message" required maxlength="255"></textarea>
+            <button type="submit" class="read-more">submit</button>
          </form>
       </div>
 

@@ -72,10 +72,33 @@ main {
       line-height: 28px;
       letter-spacing: 0;
    }
+   form {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+   }
+
+   .address-ul {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+   }
 }
 
 footer p {
    font-size: 0.8rem;
+}
+
+// contact-me page 
+
+.address-ul li {
+   font-size: 1rem;
+}
+
+.form-container {
+   button {
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      font-weight: normal;
+   }
 }
 
 
