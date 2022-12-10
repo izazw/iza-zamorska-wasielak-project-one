@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+// * Portrait tablet and small desktops */
+@media (max-width: 940px) {
+.wrapper {
+   width: 90%;
+}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+// homepage
+
+   .header-container-main {
+   height: calc(100vh - 80px);
+   .header-img {
+         position: relative;
+         bottom: 0;
+   }
+}
+
+.journey-container {
+   height: 100vh;
+   align-items: flex-start;
+}
+
+.landscape {
+   visibility: hidden;
+   height: 0;
+}
+
+// contact-me page
+.header-container {
+height: calc(30vh - 80px);
+
+
+}
+
+.contact-container {
+   flex-direction: column;
+   align-content: space-between;
+   padding: 40px;
+
+   .contact-details {
+      width: 100%;
+   }
+
+   .contact-form-container{
+      margin-top: 20px;
+      width: 100%;
+   }
+}
+
+
+// blog 
+
+.blog-container {
+   flex-direction: column;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   .aside-container {
+   width: 100%;
+   .bio-container {
+      display: flex;
+      align-content: space-between;
+      .bio-image-container {
+         width: 31%;
+         margin: 20px;
+      }
+      .bio-text-container {
+         width: calc(69% - 50px);
+      }
+   }
+   }
+   .blog-main-container {
+      width: 100%;
+   }
+   .recent-posts-nav {
+      margin-bottom: 20px;
+   }
+}
+
+
+}
+
+
+
+
+
+// /* Landscape phones and down */
+// @media (max-width: 480px) {
+// }
+
+// @media (max-width: 320px) {
+
+// }
+
