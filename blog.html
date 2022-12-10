@@ -64,7 +64,7 @@
                   </h3>
                   <p>
                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, ducimus nisi, ullam placeat itaque soluta ratione adipisci voluptatem fugiat cupiditate nulla facilis at earum maxime quibusdam odit sit tempora nemo. 
-                     <a href="">Find out more.</a>
+                     <a href="#" class="special">Find out more.</a>
                   </p>
                </div>
                
@@ -77,11 +77,20 @@
                   </ul>
                </div>
             </aside>
+
+            <!-- blog main container -->
+
+
             <div class="blog-main-container">
-               <h2>
-                  my favourite travel destinations
-               </h2>
+
+               <!-- article -->
+
+
                <article>
+                  <h2>
+                     my favourite travel destinations
+                  </h2>
+              
                   <h4>Monday October 8th, 2018 by Willow<h4>
                   <p>
                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ea libero ratione quibusdam alias! Nemo veritatis voluptate aliquam quas vel sapiente repellat, impedit perferendis odio, ducimus placeat magnam atque delectus.
@@ -103,46 +112,55 @@
                   </p>
                </article>
 
-               <div class=comment-container>
-                  <div class="comment-img">
-                     <img src="./assets/blog-image-3.jpg" alt="user profile photo">
-                  </div>
-                  <div class="comment-text">
-                     <h4>Tuesday October 9th, 2018, by Barb</h4>
-                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates dolorum exercitationem nemo sed, quisquam qui quis accusantium quae reiciendis ipsa voluptatem cumque distinctio possimus, consectetur minus ut vitae facere?
-                     </p>
-                  </div>
-                  <div class=comment-container>
+               <!-- comments  -->
+
+               <div class="comments-container">
+                  <div class= "comment-box first-comment">
                      <div class="comment-img">
-                        <img src="./assets/blog-image-4.jpg" alt="user profile photo">
+                        <img src="./assets/blog-image-3.jpg" alt="user profile photo">
                      </div>
                      <div class="comment-text">
-                        <h4>Wednesday October 10th, 2018, by Daisy</h4>
+                        <h4>Tuesday October 9th, 2018, by Barb</h4>
                         <p>
                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates dolorum exercitationem nemo sed, quisquam qui quis accusantium quae reiciendis ipsa voluptatem cumque distinctio possimus, consectetur minus ut vitae facere?
                         </p>
                      </div>
-                     <div class="form-container gray-style blog-form-container">
-                        <form action="#" method="#" class="contact-form" name="contact-form">
-               
-                           <label for="user-name" class="sr-only">Name</label>
-                           <input type="text" id="user-name" name="user-name" placeholder="Name">
-               
-                           <label for="user-email" class="sr-only">Email address</label>
-                           <input type="text" id="user-email" name="user-email" placeholder="Email address">
-                        
-                           <label for="comment" class="sr-only">Comment</label>
-                           <textarea name="user-comment" id="comment" cols="20" rows="10" placeholder="comment" required maxlength="255"></textarea>
-                           <button type="submit" class="read-more">submit</button>
-                        </form>
-                     </div>
+                  </div>
 
-
-
+                  <div class=comment-box>
+                        <div class="comment-img second-comment">
+                           <img src="./assets/blog-image-4.jpg" alt="user profile photo">
+                        </div>
+                        <div class="comment-text">
+                           <h4>Wednesday October 10th, 2018, by Daisy</h4>
+                           <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates dolorum exercitationem nemo sed, quisquam qui quis accusantium quae reiciendis ipsa voluptatem cumque distinctio possimus, consectetur minus ut vitae facere?
+                           </p>
+                        </div>
+                  </div>
                </div>
 
+               <!-- blog form container  -->
+
+               <div class="form-container gray-style blog-form-container">
+                  <form action="#" method="#" class="contact-form" name="contact-form" class="comment-form">
+               
+                     <label for="user-name" class="sr-only">Name</label>
+                     <input type="text" id="user-name" name="user-name" placeholder="Name">
+                  
+                     <label for="user-email" class="sr-only">Email address</label>
+                     <input type="text" id="user-email" name="user-email" placeholder="Email address">
+                           
+                     <label for="comment" class="sr-only">comment</label>
+                     <textarea name="user-comment" id="comment" cols="20" rows="10" placeholder="Comment" required maxlength="255"></textarea>
+                     
+                     <button type="submit" class="read-more">post comment</button>
+                  </form>
+               </div>
+
+
             </div>
+            <!-- end of blog-main-container -->
 
          </div>
 
