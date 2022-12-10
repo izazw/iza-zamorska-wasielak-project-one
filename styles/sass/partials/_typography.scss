@@ -54,6 +54,10 @@ main {
    h3 {
       font-size: 1.2rem;
    }
+   h4 {
+      font-size: 0.9rem;
+      font-weight: normal;
+   }
    a {
       color: inherit;
       h2 {
@@ -101,8 +105,20 @@ footer p {
    }
 }
 
+a.special {
+   color: $clr-base-lt;
+   font-weight: bold;
+}
 
+.recent-posts-nav {
+font-size: 0.9rem;
+}
 
+article p,
+article h4 {
+   font-weight: normal;
+}
 
-
-
+.comment-text h4 {
+   margin-top: 10px;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -271,6 +272,10 @@ main h2 {
 main h3 {
   font-size: 1.2rem;
 }
+main h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
 main a {
   color: inherit;
 }
@@ -310,6 +315,24 @@ footer p {
   letter-spacing: 1px;
   font-size: 0.9rem;
   font-weight: normal;
+}
+
+a.special {
+  color: #709b6b;
+  font-weight: bold;
+}
+
+.recent-posts-nav {
+  font-size: 0.9rem;
+}
+
+article p,
+article h4 {
+  font-weight: normal;
+}
+
+.comment-text h4 {
+  margin-top: 10px;
 }
 
 .wrapper {
@@ -705,10 +728,8 @@ header {
 .contact-container .address-ul li {
   margin-bottom: 10px;
 }
-.contact-container .form-container {
-  width: calc(70% - 30px);
-}
-.contact-container .form-container form {
+
+.form-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,7 +739,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact-container .form-container form input {
+.form-container form input {
   background-color: #ffffff;
   width: calc(50% - 5px);
   padding: 30px 20px;
@@ -726,61 +747,66 @@ header {
   border: none;
   display: inline-block;
 }
-.contact-container .form-container form input::-webkit-input-placeholder {
+.form-container form input::-webkit-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form input::-moz-placeholder {
+.form-container form input::-moz-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form input:-ms-input-placeholder {
+.form-container form input:-ms-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form input::-ms-input-placeholder {
+.form-container form input::-ms-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form input::placeholder {
+.form-container form input::placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form textarea {
+.form-container form textarea {
   background-color: #ffffff;
   width: 100%;
   padding: 30px 20px;
   resize: none;
   border: none;
 }
-.contact-container .form-container form textarea::-webkit-input-placeholder {
+.form-container form textarea::-webkit-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form textarea::-moz-placeholder {
+.form-container form textarea::-moz-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form textarea:-ms-input-placeholder {
+.form-container form textarea:-ms-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form textarea::-ms-input-placeholder {
+.form-container form textarea::-ms-input-placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container form textarea::placeholder {
+.form-container form textarea::placeholder {
   color: #1f1f1f;
   opacity: 0.9;
 }
-.contact-container .form-container button {
+.form-container button {
   width: 100%;
   border: none;
   margin-top: 15px;
 }
 
+.contact-form-container {
+  width: calc(70% - 30px);
+}
+
 .blog-container {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +816,7 @@ header {
   padding: 80px 0;
 }
 .blog-container .aside-container {
-  width: 100%;
+  width: 31%;
   height: 100%;
   background-color: #f6f6f6;
   display: -webkit-box;
@@ -800,11 +826,98 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 .blog-container .aside-container .bio-container {
-  border: 1px solid blue;
   padding: 30px 30px;
-  height: 100%;
+  background-color: #ffffff;
+  height: 50%;
+  margin-bottom: 20px;
+}
+.blog-container .aside-container .bio-container a {
+  font-weight: bold;
+}
+.blog-container .aside-container .bio-container img {
+  width: 100%;
+}
+.blog-container .aside-container .bio-container p {
+  margin-bottom: 0;
+}
+.blog-container .aside-container .recent-posts-nav {
+  padding: 30px 30px;
+  height: 40%;
+  background-color: #ffffff;
+}
+.blog-container .aside-container .recent-posts-nav ul {
+  list-style-type: "·";
+}
+.blog-container .aside-container .recent-posts-nav ul li {
+  padding-left: 15px;
+}
+
+.blog-main-container {
+  width: calc(69% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.blog-main-container article {
+  padding: 30px 30px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  border-bottom: 5px solid #709b6b;
+}
+.blog-main-container article h4,
+.blog-main-container article h2 {
+  margin-top: 0;
+}
+.blog-main-container article p {
+  margin-bottom: 0;
+}
+.blog-main-container .comments-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-bottom: 25px;
+  border-bottom: 5px solid #709b6b;
+}
+.blog-main-container .comments-container .comment-box {
+  padding: 30px 30px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog-main-container .comments-container .comment-box .comment-img {
+  width: 11%;
+}
+.blog-main-container .comments-container .comment-box .comment-img img {
+  width: 100%;
+}
+.blog-main-container .comments-container .comment-box .comment-text {
+  width: calc(89% - 20px);
+}
+.blog-main-container .comments-container .comment-box .comment-text p {
+  margin-bottom: 0;
+}
+.blog-main-container .comments-container .first-comment {
+  margin-bottom: 15px;
 }
 
 footer {
