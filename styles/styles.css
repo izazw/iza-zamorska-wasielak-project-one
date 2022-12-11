@@ -579,13 +579,20 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.journey-container .img-container {
+  width: 31%;
+}
+.journey-container .img-container img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 17px 16px #709b6b;
+          box-shadow: 17px 16px #709b6b;
 }
 .journey-container .text-container {
-  width: calc(70% - 150px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,29 +600,22 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-left: 50px;
-  position: relative;
-  bottom: 75px;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(69% - 100px);
 }
 .journey-container .text-container h2 {
-  padding-top: 80px;
-  margin: 0 0;
+  margin-top: 0;
 }
-.journey-container .text-container p {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-}
-.journey-container .img-container {
-  width: 31%;
-}
-.journey-container .img-container img {
-  -webkit-box-shadow: 17px 17px #709b6b;
-          box-shadow: 17px 17px #709b6b;
-  margin: 90px 0;
+.journey-container .text-container a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  bottom: -16px;
 }
 
 .landscape div {
