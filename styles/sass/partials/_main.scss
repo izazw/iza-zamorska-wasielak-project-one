@@ -160,14 +160,14 @@
 .gallery-container {
    display: flex;
    justify-content: space-between;
+   
    .gallery-item {
-      height: auto;
       max-width: 31%;
       margin: 10px 0px;
 
       img {
+         width: 100%;
          height: auto;
-         max-width: 100%;
          margin: 90px 0;
       }
    }
