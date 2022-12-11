@@ -3,7 +3,7 @@
 // header home page 
 
 header {
-   background-color: $crl-base-dk;
+   background-color: $clr-base-dk;
 
    }
 
@@ -30,7 +30,7 @@ header {
    .header-container-main {
       display: flex; 
       justify-content: flex-end;
-      align-content: center;
+      align-items: center;
       .header-img {
          width: 31%;
          position: relative;
@@ -40,23 +40,23 @@ header {
             width: 100%;
             height: auto;
             padding-top: 10px;
-            box-shadow: 16px 16px $crl-white-lt;
+            box-shadow: 16px 16px $clr-white-lt;
             max-width: 400px;
          }
       }
    }
 
    .header-container-main .header-text {
-   
-      align-self: flex-start;
+
       img { 
-         position: relative;
-         top: 157px;
-         right: 50px;
+         position: absolute;
+         top: -20px;
+         left: -50px;
          height: 5.5rem;
       }
       h1 {
          padding-right: 20px;
+         position:  relative;
       }
    }
 
@@ -92,4 +92,55 @@ header {
 
 .blog-header-container {
    background-image: url("../assets/blog-image-1.jpg");
+}
+
+
+
+//sliding menu
+
+ul.sliding-menu {
+	background: $clr-base-dk;
+	position: fixed;
+   top: 100px;
+	z-index: 10;
+	width: 20%; 
+	right: -20%;
+	top: 0;
+	height: 100%;
+	transition: all 0.5s;
+   display: none;
+   flex-direction: column;  
+}
+
+ul.sliding-menu a {
+	border-bottom: 1px solid $clr-white-dk;
+	display: inline-block;
+	font-size: 40px;
+	width: 100%;
+	padding: 20px;
+	transition: all 0.3s;
+}
+
+ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+	background: $clr-base-lt;
+}
+
+
+input[type="checkbox"]:checked + ul.sliding-menu {
+	right: 0;
+}
+
+input[type="checkbox"] {
+	display: none; 
+}
+
+label[for="toggle"] {
+	
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	color: $clr-white-lt;
+	z-index: 20;
+   display: none;
 }

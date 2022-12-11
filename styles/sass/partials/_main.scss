@@ -2,7 +2,7 @@
 
 // main general
 .gray-style {
-   background-color: $crl-white-dk;
+   background-color: $clr-white-dk;
 }
 
 .read-more {
@@ -101,7 +101,7 @@
       img {
          width: 100%;
          height: auto;
-         box-shadow: 17px 17px $crl-base-dk, 490px 17px $crl-base-dk;
+         box-shadow: 17px 17px $clr-base-dk, 490px 17px $clr-base-dk;
          position: relative;
          bottom: -95px;
       }
@@ -224,11 +224,11 @@
    .contact-details {
       width: 31%;
       height: 100%;
-      background-color: $crl-white-lt;
+      background-color: $clr-white-lt;
       display: flex;
       flex-direction: column;
       a {
-         color: $crl-black;
+         color: $clr-black;
          font-weight: bold;
       }
    }
@@ -243,7 +243,7 @@
          display: inline-block;
          i {
             font-size: 1.25rem;
-            color: $crl-base-dk;
+            color: $clr-base-dk;
          }
       }
 
@@ -265,25 +265,25 @@
       flex-wrap: wrap;
       justify-content: space-between;
       input {
-         background-color: $crl-white-lt;
+         background-color: $clr-white-lt;
          width: calc(50% - 5px);
          padding: 30px 20px;
          margin-bottom: 15px;
          border: none;
          display: inline-block;
          &::placeholder {
-            color: $crl-black;
+            color: $clr-black;
             opacity: 0.9;
          }
       }
       textarea {
-         background-color: $crl-white-lt;
+         background-color: $clr-white-lt;
          width: 100%;
          padding: 30px 20px;
          resize: none;
          border: none;
          &::placeholder {
-            color: $crl-black;
+            color: $clr-black;
             opacity: 0.9;
          }
       }
@@ -315,13 +315,13 @@
    .aside-container {
       width: 31%;
       height: 100%;
-      background-color: $crl-white-dk;
+      background-color: $clr-white-dk;
       display: flex;
       flex-direction: column;
       align-content: space-between;
       .bio-container {
          padding: 30px 30px;
-         background-color: $crl-white-lt;
+         background-color: $clr-white-lt;
          height: 50%;
          margin-bottom: 20px;
          a {
@@ -339,7 +339,7 @@
          // border: 1px solid green;
          padding: 30px 30px;
          height: 40%;
-         background-color: $crl-white-lt;
+         background-color: $clr-white-lt;
          ul {
             list-style-type: "·";
             li {
@@ -358,7 +358,7 @@
    align-content: space-between;
    article {
       padding: 30px 30px;
-      background-color: $crl-white-lt;
+      background-color: $clr-white-lt;
       margin-bottom: 25px;
       border-bottom: 5px solid $clr-base-lt;
       h4,
@@ -377,7 +377,7 @@
       border-bottom: 5px solid $clr-base-lt;
       .comment-box {
          padding: 30px 30px;
-         background-color: $crl-white-lt;
+         background-color: $clr-white-lt;
          display: flex;
          justify-content: space-between;
          .comment-img {

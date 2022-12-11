@@ -1,6 +1,10 @@
 @use "variables" as *;
 
 // * Portrait tablet and small desktops */
+
+
+
+
 @media (max-width: 940px) {
 .wrapper {
    width: 90%;
@@ -22,7 +26,7 @@
 }
 
 .journey-container {
-   height: 100vh;
+
    align-items: flex-start;
 }
 
@@ -84,13 +88,22 @@ height: calc(30vh - 80px);
 }
 // /* Landscape phones and down */
 @media (max-width: 480px) {
+
+ul.sliding-menu {
+   display: flex; 
+}
+
+
+label[for="toggle"] {
+   display: block;
+}
    // homepage {
       
       .wrapper {
          width: 95%;
       }
 
-      .main-nav {
+      .main-nav .desktop-nav {
          display: none;
       }
 
@@ -174,6 +187,7 @@ height: calc(30vh - 80px);
          width: 100%;
          .gallery-item {
             width: 100%;
+            max-width: 100%;
             img {
                width: 100%;
                margin: 0 0;
