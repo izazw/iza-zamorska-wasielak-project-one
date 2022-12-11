@@ -11,19 +11,41 @@
 </head>
 <body>
 
-	<header>
+	<header id="#home">
 		
 			<nav class="main-nav">
 				<div class="nav-wrapper">
-					<ul>
+					
+					<label for="toggle"><i class="fa fa-bars"></i></label>
+               <input type="checkbox" id="toggle" name="toggle" />
+					
+					<ul class="sliding-menu">
 						<li>
-							<a href="#">home</a>
+							<a href="#home">home</a>
 						</li>
 						<li>
-							<a href="#">about</a>
+							<a href="#about">about</a>
 						</li>
 						<li>
-							<a href="#" class="menu-special">willow</a>
+							<a href="#home" class="menu-special">willow</a>
+						</li>
+						<li>
+							<a href="./blog.html">blog</a></li>
+						<li>
+							<a href="./contact.html">contact</a></li>
+					</ul>
+
+
+
+					<ul class="desktop-nav">
+						<li>
+							<a href="#home">home</a>
+						</li>
+						<li>
+							<a href="#about">about</a>
+						</li>
+						<li>
+							<a href="#home" class="menu-special">willow</a>
 						</li>
 						<li>
 							<a href="./blog.html">blog</a></li>
@@ -37,8 +59,11 @@
 
 		<div class="wrapper header-container-main" >
 			<div class="header-text">
-				<img src="./assets/circle-text.png" alt="ornamental letters stating: daily musing of">
-				<h1>Willow</h1>
+				
+				<h1>
+					<img src="./assets/circle-text.png" alt="ornamental letters stating: daily musing of">
+					Willow
+				</h1>
 			</div>
 			<div class="header-img">
 				<img src="./assets/home-image-1.jpg" alt="photo of young women with her face directed to the right on a background of green leaves">
@@ -52,7 +77,7 @@
 	<main>
 		<!-- section about -->
 
-		<section class="about gray-style">
+		<section class="about gray-style" id="about">
 			<div class="wrapper about-container">
 					<h2> who's willow? </h2>
 					<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, facere voluptas quam nesciunt impedit dolores aliquam tempore quidem saepe mollitia sunt adipisci deserunt amet culpa labore natus commodi. Velit, veniam!</p>
@@ -131,7 +156,7 @@
 
 		<!-- section gallery -->
 
-		<section class="gallery">
+		<section class="gallery" id="gallery">
 			<div class="wrapper">
 	
 				<div class="gallery-container">
@@ -161,7 +186,7 @@
 			<div class="wrapper">
 				<ul class= "nav-bottom-container fa-ul">
 					<li>
-						<a href="#">
+						<a href="#gallery">
 							<div class="contact-item">
 								<div class="icon">
 									<span class="fa-li"><i class="fa-solid fa-image"></i></span>
@@ -172,7 +197,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#about">
 							<div class="contact-item">
 								<div class="icon">
 									<span class="fa-li"><i class="fa-solid fa-user"></i></span>
