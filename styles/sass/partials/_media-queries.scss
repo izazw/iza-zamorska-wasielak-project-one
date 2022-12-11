@@ -27,8 +27,7 @@
 }
 
 .landscape {
-   visibility: hidden;
-   height: 0;
+ display: none;
 }
 
 // contact-me page
@@ -82,16 +81,125 @@ height: calc(30vh - 80px);
    }
 }
 
-
 }
-
-
-
-
-
 // /* Landscape phones and down */
-// @media (max-width: 480px) {
-// }
+@media (max-width: 480px) {
+   // homepage {
+      
+      .wrapper {
+         width: 95%;
+      }
+
+      .main-nav {
+         display: none;
+      }
+
+      .header-container-main {
+         height: 100vh;
+         width: 100%;
+         display: flex;
+         .header-text {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            h1 {
+               font-size: 2.5rem;
+               position: absolute;
+               bottom: 65px;
+               padding: 0 0;
+               margin: 0 0;
+            }
+            img {
+               position: absolute;
+               bottom: -110px;
+               left: -40px;
+
+            }
+         }
+         .header-img {
+            width: 35%;
+            margin-right: 10px;
+            align-self: flex-end;
+
+         }
+      }
+
+
+      // favourite things 
+
+      .favourite-container {
+         flex-direction: column;
+         align-content: space-between;
+         .img-container {
+            width: 80%;
+         } 
+         .text-container {
+            width: 100%;
+            height: 100%;
+            h3 {
+               padding-top: 40px;
+            }
+         }
+
+      }
+
+      .bucket-container {
+         flex-direction: column;
+         align-content: space-between;
+         .text-container {
+            width: 100%;
+         }
+         .img-container {
+            width: 100%;
+            height: auto;
+            position: static;
+         }
+      }
+
+      .journey-container {
+         flex-direction: column;
+         .img-container {
+            width: 100%;
+         }
+         .text-container {
+            width: 100%;
+            position: static;
+         }
+      }
+
+      .gallery-container {
+         flex-direction: column;
+         align-content: space-between;
+         width: 100%;
+         .gallery-item {
+            width: 100%;
+            img {
+               width: 100%;
+               margin: 0 0;
+            }
+         }
+      }
+
+      // bottom navigation
+
+      .nav-bottom-container {
+         flex-direction: column;
+         align-content: center;
+         li {
+         width: 100%;
+         }
+         .contact-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .icon {
+               top: 55px;
+               left: 250px;
+
+            }
+         }
+      }
+}
 
 // @media (max-width: 320px) {
 
