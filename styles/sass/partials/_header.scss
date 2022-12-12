@@ -103,28 +103,26 @@ ul.sliding-menu {
 	position: fixed;
    top: 100px;
 	z-index: 10;
-	width: 20%; 
-	right: -20%;
-	top: 0;
+	width: 35%; 
+	right: -35%;
 	height: 100%;
 	transition: all 0.5s;
    display: none;
-   flex-direction: column;  
+   flex-direction: column;
+   a {
+      border-bottom: 1px solid $clr-white-dk;
+      display: inline-block;
+      font-size: 40px;
+      width: 100%;
+      padding: 5px;
+      transition: all 0.3s;
+      &:hover,
+      &:focus {
+         background: $clr-base-lt;
+      }
+   }
 }
 
-ul.sliding-menu a {
-	border-bottom: 1px solid $clr-white-dk;
-	display: inline-block;
-	font-size: 40px;
-	width: 100%;
-	padding: 20px;
-	transition: all 0.3s;
-}
-
-ul.sliding-menu a:hover,
-ul.sliding-menu a:focus {
-	background: $clr-base-lt;
-}
 
 
 input[type="checkbox"]:checked + ul.sliding-menu {
