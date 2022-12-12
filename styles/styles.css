@@ -498,6 +498,10 @@ label[for=toggle] {
   display: none;
 }
 
+label[for=toggle] {
+  color: #e4a436;
+}
+
 .gray-style {
   background-color: #f6f6f6;
 }

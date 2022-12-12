@@ -142,3 +142,7 @@ label[for="toggle"] {
 	z-index: 20;
    display: none;
 }
+
+label[for="toggle"] {
+   color: $clr-accent;
+}
