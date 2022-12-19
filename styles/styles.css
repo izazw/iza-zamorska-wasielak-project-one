@@ -930,6 +930,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
 }
 .blog-main-container .comments-container .comment-box .comment-img {
   width: 11%;
@@ -943,9 +944,6 @@ header {
 }
 .blog-main-container .comments-container .comment-box .comment-text p {
   margin-bottom: 0;
-}
-.blog-main-container .comments-container .first-comment {
-  margin-bottom: 15px;
 }
 
 footer {

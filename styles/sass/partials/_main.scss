@@ -380,6 +380,7 @@
          background-color: $clr-white-lt;
          display: flex;
          justify-content: space-between;
+         margin-top: 15px;
          .comment-img {
             width: 11%;
             img {
@@ -393,9 +394,6 @@
                margin-bottom: 0;
             }
          }
-      }
-      .first-comment {
-         margin-bottom: 15px;
       }
    }
    
