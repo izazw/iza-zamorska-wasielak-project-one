@@ -18,22 +18,7 @@
          
          <nav class="main-nav">
             <div class="nav-wrapper">
-
-               <label for="toggle"><i class="fa fa-bars"></i></label>
-               <input type="checkbox" id="toggle" name="toggle" />
-					
-					<ul class="sliding-menu">
-						<li>
-							<a href="./index.html#home">home</a>
-						</li>
-						<li>
-							<a href="./index.html#about">about</a>
-						</li>
-						<li>
-							<a href="./blog.html">blog</a></li>
-						<li>
-							<a href="./contact.html">contact</a></li>
-					</ul>
+               <i class = "fa fa-bars burger-menu"></i>
 
                <ul class="desktop-nav">
                   <li>
@@ -163,7 +148,7 @@
                <!-- blog form container  -->
 
                <div class="form-container gray-style blog-form-container">
-                  <form action="#" method="#" class="contact-form" name="contact-form" class="comment-form">
+                  <form action="#" method="#" class="contact-form" name="contact-form" class="comment" id="comment">
                
                      <label for="user-name" class="sr-only">Name</label>
                      <input type="text" id="user-name" name="user-name" placeholder="Name">
@@ -172,7 +157,7 @@
                      <input type="text" id="user-email" name="user-email" placeholder="Email address">
                            
                      <label for="comment" class="sr-only">comment</label>
-                     <textarea name="user-comment" id="comment" cols="20" rows="10" placeholder="Comment" required maxlength="255"></textarea>
+                     <textarea name="user-comment" id="comment-text" cols="20" rows="10" placeholder="Comment" maxlength="255" required></textarea>
                      
                      <button type="submit" class="read-more">post comment</button>
                   </form>
@@ -189,6 +174,6 @@
       <footer>
          <p>Copyright © 2018 HackerYou </p>
    </footer>
-
+   <script src="script.js"></script>
    </body>
 </html>

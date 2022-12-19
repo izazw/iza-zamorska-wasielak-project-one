@@ -452,51 +452,18 @@ header {
   background-image: url("../assets/blog-image-1.jpg");
 }
 
-ul.sliding-menu {
-  background: #345231;
+.main-nav i {
   position: fixed;
-  top: 100px;
-  z-index: 10;
-  width: 35%;
-  right: -35%;
-  height: 100%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  display: none;
+  top: 10px;
+  right: 10px;
+  color: #e4a436;
+}
+
+.js-menu {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-ul.sliding-menu a {
-  border-bottom: 1px solid #f6f6f6;
-  display: inline-block;
-  font-size: 40px;
-  width: 100%;
-  padding: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-ul.sliding-menu a:hover, ul.sliding-menu a:focus {
-  background: #709b6b;
-}
-
-input[type=checkbox]:checked + ul.sliding-menu {
-  right: 0;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-label[for=toggle] {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: #ffffff;
-  z-index: 20;
-  display: none;
-  color: #e4a436;
 }
 
 .gray-style {
@@ -998,18 +965,6 @@ footer p {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  ul.sliding-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 80%;
-  }
-  label[for=toggle] {
-    display: block;
-  }
-  .main-nav .desktop-nav {
-    display: none;
-  }
   .header-container-main {
     height: calc(100vh - 80px);
   }

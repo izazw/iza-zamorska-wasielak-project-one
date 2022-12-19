@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-// * Portrait tablet and small desktops */
+// * Portrait tablet and small   ps */
 
 
 
@@ -16,20 +16,20 @@
 @media (max-width: 768px) {
 
    
-ul.sliding-menu {
-   display: flex; 
-   height: 80%;
-}
+// ul.sliding-menu {
+//    display: flex; 
+//    height: 80%;
+// }
 
 
-label[for="toggle"] {
-   display: block;
-}
+// label[for="toggle"] {
+//    display: block;
+// }
 
 
-.main-nav .desktop-nav {
-   display: none;
-}
+// .main-nav .desktop-nav {
+//    display: none;
+// }
 
 // homepage
 
