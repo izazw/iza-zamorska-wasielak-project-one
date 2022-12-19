@@ -14,81 +14,108 @@ myUl.classList.toggle("js-menu");
 // ADDING COMMENTS;
 
 const commentForm = document.getElementById("comment");
-console.log(commentForm);
 
 //event listener on submit
 
 commentForm.addEventListener("submit", function(event) {
 
-// preventing default refreshing 
-
+   // preventing default refreshing 
    event.preventDefault();
-
-   const nameInput = document.getElementById("user-name");
-   // console.log(nameInput);
-
-   const nameValue = nameInput.value;
-
-   //creating div for comment
-   const commentDiv = document.createElement("div");
-
-   //adding class to div
-   commentDiv.classList.add("comment-box");
-
-   // console.log(commentDiv);
-
-//STRUCTURE
-
+   
    //selecting comments-container
    const commentContainer = document.getElementsByClassName("comments-container")[0];
-
-   console.log(commentContainer);
-   //appending new div to comments-container
-   commentContainer.append(commentDiv);
-
-//H4
-
-   //creating h4 
-   const commentHeader = document.createElement("h4");
-   // console.log(commentHeader);
    
-   //adding h4 to div with comment
-   commentDiv.append(commentHeader); 
-   
-   
-   //creating a string in h4  
-   const commentHeaderText = commentHeader.append(`${dateCreator()}, by ${nameValue}`);
+   //building html structer of comment
+   const commentDiv = commentDivConstruction();
 
+   //building h4 in comment
+   const nameInput = document.getElementById("user-name")
+   
+   const nameValue = nameInput.value;
+   // console.log(nameInput);
+   nameInput.value = "";
 
-//P 
+   const h4 = commentDiv.getElementsByTagName("h4")[0];
+   h4.append(`${dateCreator()}, by ${nameValue}`);
+
+   //building p in comment
+   const p = commentDiv.getElementsByTagName("p")[0];
+   console.log(p);
+   
    //selecting comment input
    const commentInput = document.getElementById("comment-text");
-   // console.log (commentInput);
+   console.log (commentInput);
    
    const commentTextValue = commentInput.value;
-   // console.log(commentTextValue)
-
-   //creating p element
-   const commentParagraph = document.createElement("p");
-   // console.log(commentParagraph);
+   console.log(commentTextValue);
+   
+   //resetting value
+   commentInput.value = "";
 
    //appending comment text to p 
-   commentParagraph.append(commentTextValue);
-   // console.log(commentParagraph);
+   p.append(commentTextValue);
 
-   //adding p to div
-   commentDiv.append(commentParagraph); 
+   //resetting email value
+   //building h4 in comment
+   const emailInput = document.getElementById("user-email");
+   
+   const emailValue = emailInput.value;
+   // console.log(nameInput);
+   emailInput.value = "";
+
+
+
+   //appending cinnebt div to the comment container
+   commentContainer.append(commentDiv);
 
 } 
 );
 
+//div comment construction 
+const commentDivConstruction = function () {
 
-//date function 
+   //creating comment img div
 
-const date = new Date();
+
+   const commentImgDiv = document.createElement("div");
+   commentImgDiv.classList.add("comment-img");
+
+   //creating and adding img div content
+
+   const commentImage = document.createElement("img");
+   commentImage.src = "https://placebear.com/100/100";
+   commentImage.alt = "user photo placeholder"
+   // console.log(commentImage);
+   commentImgDiv.append(commentImage);
+
+
+   //creating comment text div 
+
+   const commentText = document.createElement("div");
+   commentText.classList.add("comment-text");
+   const h4 = document.createElement("h4");
+   const p = document.createElement("p");
+   commentText.append(h4);
+   commentText.append(p);
+   // console.log(commentText); 
+   commentImgDiv.append(commentText);
+
+   //creating comment div containing comment text div and comment img div
+   const commentDiv = document.createElement("div");
+   commentDiv.classList.add("comment-box");
+   commentDiv.append(commentImgDiv);
+   commentDiv.append(commentText);
+
+   return commentDiv;
+};
+
+
+
+
 
 const dateCreator = function () {
 
+   const date = new Date();
    
    const day = date.getDate();
    const month = date.toLocaleDateString("default", {month: "long"});
@@ -115,4 +142,28 @@ const dateCreator = function () {
 
 
 
-//pop up modal? adding images? image carousel? error handling to be run on form submission?
+//alternative function commentDivConstruction
+
+
+   //creating comment-box container v1 
+
+
+   // const commentDiv = document.createElement("div");
+   // commentDiv.classList.add("comment-box");
+
+   // commentDiv.insertAdjacentHTML("afterbegin", 
+   // `<div class="comment-img">
+   //    <img 
+   //       src="https://placebear.com/100/100" 
+   //       alt="user profile photo">
+   //    </div>
+   //    <div class="comment-text">
+   //       <h4></h4>
+   //       <p></p>
+   // </div>`)
+
+   // return commentDiv;
+
+
+
+
